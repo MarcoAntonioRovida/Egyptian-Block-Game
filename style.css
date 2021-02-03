@@ -1,0 +1,43 @@
+body {
+  background: rgb(150, 100, 85);
+}
+
+.backLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  background-image: url('desert.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+}
+
+.human {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 0px;
+  background-image: url("human.png");
+}
+
+.wall {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 0px;
+  background-image: url("rock.png");
+}
+
+.image {
+  width: 100%;
+  height: 80%;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 15000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
